@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*====================
+         Common
+====================== */
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*====================
+         Header CSS
+====================== */
+
+header{
+    margin-top: 50px;
+}
+
+
+
+.inner_header{
+display: flex;
+justify-content:space-between;
+align-items: center;
+}
+
+.logo_area{
+    color: #ffff;
+    font-family:sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    line-height: 2;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 21px;
+    position: relative;
+}
+nav ul li a{
+    transition: 0.3s;
+    color: black;
+    font-family:sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+nav ul li:hover a{
+    color: orange;
+
+}
+nav ul li:hover ul a{
+    color: #ffff;
+
+}
+
+.try_btn{
+width: 170px;
+height: 57px;
+border-radius: 29px;
+background-color: #2500f9;
+color: #ffff;
+cursor: pointer;
+}
+
+/*===================
+  Dropdown-menu CSS
+===================== */
+
+nav ul ul{
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(59, 55, 59);
+    left: -99999999px;
+    top: 45px;
+    width: 150px;
+    padding: 10px 0;
+}
+
+nav ul li:hover ul{
+left: 0px;
+}
+
+nav ul li:hover ul ul{
+left: -999999999px;
+}
+
+nav ul ul li{
+padding: 5px 15px;
+}
+nav ul ul li:hover{
+    background-color: orange;
+}
+
+nav ul ul ul{
+    left: -9999999999px;
+    top: 0;
+}
+nav ul ul li:hover ul{
+    left: 150px;
+    top: 0;
+}
+nav ul ul  li:hover ul ul{
+    left: -999999999px;
+    top: 0;
+}
+nav ul ul ul  li:hover ul{
+    left: 150px;
+    top: 0;
+}
+
+/* =================
+     header-Section
+====================*/
+
+.modern{
+    font-size: 60px;
+line-height: 75px;
+color: #242f51;
+font-weight: 600;
+font-family: "Poppins";
+}
+
+.header-btn{
+font-size: 16px;
+line-height: 44px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Poppins";
+width: 170px;
+height: 57px;
+border-radius: 29px;
+background-color: #2500f9;
+text-align: center;
+}
+
+.header-sec-left{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.main-sec{
+    display: flex;
+    align-items: center;
+}
+
+.watch-demo{
+    padding-left: 25px;
+    
+}
+
+.header-img{
+padding-left: 100px;
+}
